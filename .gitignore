@@ -1,0 +1,32 @@
+# folders
+
+build/
+.vscode/
+.idea/
+$RECYCLE.BIN/
+.Trash-1000/
+
+# system files
+
+.DS_Store
+Thumbs.db
+
+# binaries
+
+*.gba
+*.elf
+*.bin
+*.exe
+
+# audio files
+
+*.wav
+*.raw
+*.mod
+*.s3m
+*.xm
+*.it
+
+# miscelaneous
+*.sav
+*.map
