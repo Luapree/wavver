@@ -2,5 +2,6 @@
 #define PLAYER_H
 
 extern int play();
-extern int keys();
+extern int player_init();
+
 #endif // PLAYER_H

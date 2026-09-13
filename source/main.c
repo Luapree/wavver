@@ -1,6 +1,6 @@
 #include "keys.h"
 #include "display.h"
-#include "player_init.h"
+#include "player.h"
 
 #include <tonc.h>
 
