@@ -5,21 +5,19 @@
 #include <soundbank_bin.h>
 #include <tonc.h>
 
-int keys()
-{
+int keys() {
 
-	if (key_hit(KEY_A)) {
+  if (key_hit(KEY_A)) {
 
-		if(mmActive()) {
-			mmPause();
-		}
-		else {
-			mmResume();
-		}
-	if (key_hit(KEY_START)) {
-		SoftReset();
-	}
-}
+    if (mmActive()) {
+      mmPause();
+    } else {
+      mmResume();
+    }
+    if (key_hit(KEY_START)) {
+      SoftReset();
+    }
+  }
 
-return 0;
+  return 0;
 }
