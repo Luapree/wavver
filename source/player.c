@@ -13,7 +13,6 @@ int player_init() {
 	irq_enable(II_VBLANK);
 
     mmInitDefault( (mm_addr)soundbank_bin, 8 );
-	play();
     return 0;
 }
 

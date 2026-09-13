@@ -12,6 +12,7 @@
 int main () {
 	player_init();
 	display_init();
+	play();
 
 	while(1) {
 		mmFrame();
