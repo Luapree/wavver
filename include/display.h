@@ -4,6 +4,10 @@
 extern int icons();
 extern int display_init();
 
+extern int IconsSetToPlay();
+
+extern int IconsSetToPause();
+
 // all under this referenced https://github.com/khalladay/GBA-By-Example/blob/master/4-SpriteAnimation/code/gba.h, licensed under MIT license
 typedef unsigned short     uint16;
 

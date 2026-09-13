@@ -18,18 +18,26 @@ int display_init() {
 
 int icons() {
     if(mmActive()) {
+        IconsSetToPlay();
+    }
+    else {
+        IconsSetToPause();
+    }
+}
+
+int IconsSetToPlay() {
     ObjectAttributes *spriteAttribs = &oam_object_backbuffer[0];
     spriteAttribs->attr0 = 0x2080;
     spriteAttribs->attr1 = 0x0070;
     spriteAttribs->attr2 = 0x0002;
     SELF_MEM_OAM[0] = oam_object_backbuffer[0];
-    }
-    else {
+}
+
+int IconsSetToPause() {
     ObjectAttributes *spriteAttribs = &oam_object_backbuffer[0];
     spriteAttribs->attr0 = 0x2080;
     spriteAttribs->attr1 = 0x2070;
     spriteAttribs->attr2 = 0x0006;
 
     SELF_MEM_OAM[0] = oam_object_backbuffer[0];
-    }
 }
